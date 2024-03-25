@@ -6,7 +6,7 @@
 
 ## 시연 영상
 
-- [참고 영상](https://www.youtube.com/watch?v=DfDPJqD3FjI&list=PLkC56g8fboI0HghByzVuD2Vz8ROUXfF_j)
+<img src="https://github.com/bymine/Javascript-Coding/assets/71866185/7efcf7b9-e1e3-4fb8-ad57-7e1ae8c03464" width="300" height="300">
 
 ## 구조
 
@@ -30,7 +30,57 @@
 
 ## 학습
 
+### javascrpt
+
+Pixel을 그리는 방법
+
+- gridButton에 클릭시 발생하는 이벤트리스너 등록
+- 높이만큼 `<div class="gridRow"></div>` 생성 및 `<div class="container"></div>`의 자식요소로 등록
+- 넓이만큼 `<div class="gridCol"></div>` 생성 및 `<div class="gridRow"></div>`의 자식 요소로 등록
+
+```javascript
+let container = document.querySelector(".container");
+let gridButton = document.getElementById("submit-grid");
+let gridWidth = document.getElementById("width-range");
+let gridHeight = document.getElementById("height-range");
+
+gridButton.addEventListener("click", () => {
+  container.innerHTML = "";
+
+  for (let i = 0; i < gridHeight.value; i++) {
+    let div = document.createElement("div");
+    div.classList.add("gridRow");
+
+    for (let j = 0; j < gridWidth.value; j++) {
+      let col = document.createElement("div");
+      col.classList.add("gridCol");
+
+      div.appendChild(col);
+    }
+
+    container.appendChild(div);
+  }
+});
+```
+
+```css
+.gridCol {
+  height: 1em;
+  width: 1em;
+  border: 1px solid #ddd;
+}
+
+.gridRow {
+  display: flex;
+}
+```
+
+![픽셀 그리는 법](https://github.com/bymine/Javascript-Coding/assets/71866185/0e4bce9d-15d3-4da6-9e37-97c3b21dc249)
+
 ### css
+
+자바스크립트 터치 이벤트, 마우스 이벤트 정리  
+[정리 내용 바로가기](https://developer-bymine.tistory.com/20)
 
 요소를 화면 가운데 정렬하는 방법
 
