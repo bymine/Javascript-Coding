@@ -6,7 +6,7 @@
 
 ## 시연 영상
 
-<img src="https://github.com/bymine/Javascript-Coding/assets/71866185/7efcf7b9-e1e3-4fb8-ad57-7e1ae8c03464" width="300" height="300">
+<img src="https://github.com/bymine/Javascript-Coding/assets/71866185/7efcf7b9-e1e3-4fb8-ad57-7e1ae8c03464" width="800" height="500">
 
 ## 구조
 
@@ -30,9 +30,7 @@
 
 ## 학습
 
-### javascrpt
-
-Pixel을 그리는 방법
+### Pixel을 그리는 방법
 
 - gridButton에 클릭시 발생하는 이벤트리스너 등록
 - 높이만큼 `<div class="gridRow"></div>` 생성 및 `<div class="container"></div>`의 자식요소로 등록
@@ -77,12 +75,10 @@ gridButton.addEventListener("click", () => {
 
 ![픽셀 그리는 법](https://github.com/bymine/Javascript-Coding/assets/71866185/0e4bce9d-15d3-4da6-9e37-97c3b21dc249)
 
-### css
-
 자바스크립트 터치 이벤트, 마우스 이벤트 정리  
 [정리 내용 바로가기](https://developer-bymine.tistory.com/20)
 
-요소를 화면 가운데 정렬하는 방법
+### 요소를 화면 가운데 정렬하는 방법
 
 1. top, left, translate를 이용한 가운데 정렬
 
